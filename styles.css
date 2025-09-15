@@ -19,6 +19,12 @@
   font-weight: bold;
 }
 
+.media-icons {
+  display: flex; /* ✅ required for Cypress */
+  justify-content: center;
+  align-items: center;
+}
+
 .media-icons a img {
   width: 35px;
   height: 35px;
@@ -31,41 +37,41 @@
 }
 
 /* Middle Section */
-.footer-sections {
-  display: flex;
+.link-boxes {
+  display: flex; /* ✅ required for Cypress */
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 20px 0;
 }
 
-.footer-sections .column {
+.link-boxes .column {
   margin: 10px;
   min-width: 150px;
 }
 
-.footer-sections h3 {
+.link-boxes h3 {
   margin-bottom: 10px;
   border-bottom: 2px solid #fff;
   display: inline-block;
   padding-bottom: 5px;
 }
 
-.footer-sections ul {
+.link-boxes ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-sections ul li {
+.link-boxes ul li {
   margin: 8px 0;
 }
 
-.footer-sections a {
+.link-boxes a {
   color: #fff;
   text-decoration: none;
 }
-.footer-sections a:hover {
+.link-boxes a:hover {
   color: #00bcd4;
 }
 
@@ -88,7 +94,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .footer-sections {
+  .link-boxes {
     flex-direction: column;
     align-items: center;
   }
@@ -99,15 +105,6 @@
   }
 
   .media-icons {
-  display: flex;          /* ✅ add this */
-  justify-content: center;
-  align-items: center;
-}
-	.link-boxes {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
+    margin-top: 10px;
+  }
 }
