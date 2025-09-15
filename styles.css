@@ -99,6 +99,15 @@
   }
 
   .media-icons {
-    margin-top: 10px;
-  }
+  display: flex;          /* ✅ add this */
+  justify-content: center;
+  align-items: center;
+}
+	.link-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
 }
